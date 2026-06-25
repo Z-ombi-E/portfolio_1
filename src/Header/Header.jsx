@@ -1,79 +1,79 @@
-import styles from "./Header.module.css";
-import { useState } from "react";
-
-import {
-  FaGithub,
-  FaLinkedin,
-  FaInstagram,
-  FaBars,
-  FaTimes,
-} from "react-icons/fa";
+import styles from './Header.module.css'
+import { useState } from 'react'
+import { FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa'
 
 function Header() {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(false)
 
   return (
-    <div className={styles.headerContainer}>
+    <div className={styles.wrapper}>
+        <header className={`${styles.headerContainer} ${open ? styles.menuOpen : ''}`}>
+
+      {/* Left — Logo */}
       <div className={styles.leftSection}>
         <h1>Nethum Nenula</h1>
-
-        <div className={`${styles.navButtons} ${open ? styles.show : ""}`}>
-          <ul>
-            <li>
-              <a href="#" className={styles.active}>
-                Home
-              </a>
-            </li>
-            <li>
-              <a href="#">Portfolio</a>
-            </li>
-            <li>
-              <a href="#">Services</a>
-            </li>
-            <li>
-              <a href="#">About</a>
-            </li>
-            <li>
-              <a href="#">Contact</a>
-            </li>
-          </ul>
-        </div>
       </div>
 
-      <div className={`${styles.rightSection} ${open ? styles.show : ""}`}>
+      {/* Center — Desktop Nav */}
+      <nav className={styles.navButtons}>
+        <ul>
+          <li><a href="#" className={styles.active}>Home</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+
+      {/* Right — Socials */}
+      <div className={styles.rightSection}>
         <div className={styles.profileButtons}>
           <ul>
             <li>
-              <a href="#">
-                <FaGithub className={styles.icon} />
-                <span>GitHub</span>
-              </a>
+              <a href="#"><FaGithub className={styles.icon} /><span>GitHub</span></a>
             </li>
-
             <li>
-              <a href="#">
-                <FaLinkedin className={styles.icon} />
-                <span>LinkedIn</span>
-              </a>
+              <a href="#"><FaLinkedin className={styles.icon} /><span>LinkedIn</span></a>
             </li>
-
             <li>
-              <a href="#">
-                <FaInstagram className={styles.icon} />
-                <span>Instagram</span>
-              </a>
+              <a href="#"><FaInstagram className={styles.icon} /><span>Instagram</span></a>
             </li>
           </ul>
         </div>
       </div>
 
-      {/* Hamburger */}
-
-      <button className={styles.menuBtn} onClick={() => setOpen(!open)}>
-        {open ? <FaTimes /> : <FaBars />}
+      {/* Morphing Hamburger */}
+      <button
+        className={`${styles.menuBtn} ${open ? styles.opened : ''}`}
+        onClick={() => setOpen(!open)}
+        aria-label="Toggle menu"
+      >
+        <span className={styles.bar} />
+        <span className={styles.bar} />
+        <span className={styles.bar} />
       </button>
+
+      
+
+    </header>
+    {/* Mobile Menu */}
+      <div className={`${styles.mobileMenu} ${open ? styles.show : ''}`}>
+        <ul className={styles.mobileNav}>
+          <li><a href="#" onClick={() => setOpen(false)}>Home</a></li>
+          <li><a href="#" onClick={() => setOpen(false)}>Portfolio</a></li>
+          <li><a href="#" onClick={() => setOpen(false)}>Services</a></li>
+          <li><a href="#" onClick={() => setOpen(false)}>About</a></li>
+          <li><a href="#" onClick={() => setOpen(false)}>Contact</a></li>
+        </ul>
+        <ul className={styles.mobileSocials}>
+          <li><a href="#"><FaGithub /> GitHub</a></li>
+          <li><a href="#"><FaLinkedin /> LinkedIn</a></li>
+          <li><a href="#"><FaInstagram /> Instagram</a></li>
+        </ul>
+      </div>
     </div>
-  );
+    
+  )
 }
 
-export default Header;
+export default Header
