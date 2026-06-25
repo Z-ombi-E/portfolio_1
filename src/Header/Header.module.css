@@ -16,7 +16,7 @@
   top: 0;
   z-index: 1000;
 }
-/* ── Header shell ────────────────────────────────────────── */
+/*Header shell*/
 .headerContainer {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   display: grid;
@@ -37,7 +37,7 @@
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
 }
 
-/* ── Logo ────────────────────────────────────────────────── */
+/* Logo*/
 .leftSection {
   display: flex;
   align-items: center;
@@ -102,7 +102,7 @@
 }
 .navButtons ul li a.active::after { width: 100%; }
 
-/* ── Right — Socials ─────────────────────────────────────── */
+/* Right — Socials  */
 .rightSection {
   display: flex;
   justify-content: flex-end;
@@ -149,7 +149,7 @@
   transform: translateY(-2px);
 }
 
-/* ── Hamburger ───────────────────────────────────────────── */
+/* Hamburger  */
 .menuBtn {
   display: none;
   flex-direction: column;
@@ -182,7 +182,7 @@
 .opened .bar:nth-child(2) { opacity: 0; width: 0; }
 .opened .bar:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
-/* ── Mobile menu ─────────────────────────────────────────── */
+/* Mobile menu  */
 .mobileMenu {
   /* sits outside the grid flow */
   position: absolute;
@@ -259,8 +259,8 @@
 }
 .mobileSocials a:hover { color: var(--accent); }
 
-/* ── Responsive ──────────────────────────────────────────── */
-@media (max-width: 1000px) {
+/* Responsive  */
+@media (max-width: 1050px) {
   .headerContainer {
     grid-template-columns: 1fr auto;
   }
