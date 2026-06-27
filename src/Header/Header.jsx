@@ -18,7 +18,7 @@ function Header() {
       <nav className={styles.navButtons}>
         <ul>
           <li><a href="#" className={styles.active}>Home</a></li>
-          <li><a href="#">About Me</a></li>
+          <li><a href="#about">About Me</a></li>
           <li><a href="#">Skills </a></li>
           <li><a href="#">Projects </a></li>
           <li><a href="#">Contact</a></li>
