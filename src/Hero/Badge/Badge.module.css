@@ -14,7 +14,30 @@
     z-index: 10;
 }
 
+/*Position Classes*/
+.topLeft {
+    top: 20px;
+    left: 20px;
+}
 
+.topRight {
+    top: 20px;
+    right: 20px;
+}
+
+.bottomLeft {
+    bottom: 40px;
+    left: 20px;
+}
+
+.bottomRight {
+    bottom: 40px;
+    right: 20px;
+}
+.customPosition1{
+    right: 20px;
+    top: 300px;
+}
 
 .floatingBadge:hover {
     transform: translateY(-8px);
