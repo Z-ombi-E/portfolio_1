@@ -9,7 +9,7 @@ function About() {
                 <h2 className={styles.sectionTitle}>About Me</h2>
                 
                 <div className={styles.content}>
-                    {/* Image Section */}
+                    
                     <div className={styles.imageWrapper}>
                         <div className={styles.imageBorder}>
                             <img src={profilePic} alt="Nethum Nenula" />
@@ -20,7 +20,7 @@ function About() {
                         </div>
                     </div>
 
-                    {/* Text Content */}
+                   
                     <div className={styles.textContent}>
                         <h3>Crafting digital experiences with code & creativity</h3>
                         
@@ -37,7 +37,7 @@ function About() {
                             passion for building applications that make a difference.
                         </p>
 
-                        {/* Skill Tags */}
+                        
                         <div className={styles.skillTags}>
                             <span className={styles.tag}>
                                 <FaPython /> Python Development
