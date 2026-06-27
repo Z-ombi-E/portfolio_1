@@ -49,7 +49,7 @@ function Hero(){
             <div className={styles.imageContainer}>
                 <div className={styles.profileImage}>
                     
-                    <img src="/profile.jpg" alt="Nethum Nenula" />
+                    <img src="src\assets\profile.jpg" alt="Nethum Nenula" />
                 </div>
                 <div className={styles.floatingBadge}>
                     <span>✨ 2+ Years</span>
