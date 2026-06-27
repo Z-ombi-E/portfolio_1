@@ -30,13 +30,13 @@ function Header() {
         <div className={styles.profileButtons}>
           <ul>
             <li>
-              <a href="#"><FaGithub className={styles.icon} /><span>GitHub</span></a>
+              <a href="#"><FaGithub className={styles.icon} /><span className={styles.profileIconName}>GitHub</span></a>
             </li>
             <li>
-              <a href="#"><FaLinkedin className={styles.icon} /><span>LinkedIn</span></a>
+              <a href="#"><FaLinkedin className={styles.icon} /><span className={styles.profileIconName}>LinkedIn</span></a>
             </li>
             <li>
-              <a href="#"><FaInstagram className={styles.icon} /><span>Instagram</span></a>
+              <a href="#"><FaInstagram className={styles.icon} /><span className={styles.profileIconName}>Instagram</span></a>
             </li>
           </ul>
         </div>
