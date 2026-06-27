@@ -52,7 +52,8 @@ function Hero(){
                     <img src="src\assets\profile.jpg" alt="Nethum Nenula" />
                 </div>
                 <div className={styles.floatingBadge}>
-                    <span>✨ 2+ Years</span>
+                    <span>Full Stack Developer</span><br />
+                    <span>React</span>
                 </div>
             </div>
         </section>

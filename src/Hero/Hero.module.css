@@ -5,7 +5,7 @@
     font-family: var(--basic-font-family);
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     min-height: calc(100vh - 80px); /* Full height minus header */
     padding: 2rem 3rem;
     background: #0d0d0d;
@@ -157,9 +157,9 @@
 }
 
 .profileImage {
-    width: 350px;
-    height: 350px;
-    border-radius: 50%;
+    width: 450px;
+    height: 550px;
+    border-radius: 10%;
     overflow: hidden;
     border: 3px solid #2a2a2a;
     position: relative;
