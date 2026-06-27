@@ -1,5 +1,6 @@
 import styles from "./Hero.module.css";
 import Badge from "./Badge/Badge";
+import profilePic from '../assets/profile.jpg';
 import React, { useState, useEffect, useRef } from "react";
 import { HiDownload, HiCalendar, HiArrowRight } from "react-icons/hi";
 import { MdCode, MdCall } from "react-icons/md";
@@ -47,7 +48,7 @@ function Hero() {
         </div>
 
         <p className={styles.description}>
-          Building modern, responsive web applications that solve real problems
+          Building modern, responsive web applications, UI/UX designs that solve real problems
           and create meaningful experiences.
         </p>
 
@@ -67,7 +68,7 @@ function Hero() {
       <div className={styles.imageWrapper}>
         <div className={styles.imageContainer}>
           <div className={styles.profileImage}>
-            <img src="public\profile.jpg" alt="Nethum Nenula" />
+            <img src={profilePic} alt="Nethum Nenula" />
           </div>
         </div>
 
