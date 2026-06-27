@@ -53,7 +53,9 @@ function Hero(){
                 </div>
                 <div className={styles.floatingBadge}>
                     <span>Full Stack Developer</span><br />
-                    <span>React</span>
+                    <span>React </span>
+                    <span>Node Js </span>
+                    <span>Express Js</span>
                 </div>
             </div>
         </section>
