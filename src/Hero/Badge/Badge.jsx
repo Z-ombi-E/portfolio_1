@@ -1,5 +1,6 @@
 import { MdCode } from "react-icons/md";
 import styles from "./Badge.module.css";
+
 function Badge({
   name = "",
   techItem1 = "",
@@ -8,13 +9,14 @@ function Badge({
   icon: IconComponent = MdCode,
   position = "bottomRight",
 }) {
-    const positionClass = {
-        'top-left' : styles.topLeft,
-        'top-right' : styles.topRight,
-        'bottom-left' : styles.bottomLeft,
-        'bottom-right' : styles.bottomRight,
-        'custom1' : styles.customPosition1,
-    }[position] || styles.bottomRight;
+  const positionClass = {
+    'top-left': styles.topLeft,
+    'top-right': styles.topRight,
+    'bottom-left': styles.bottomLeft,
+    'bottom-right': styles.bottomRight,
+    'custom1': styles.customPosition1,
+  }[position] || styles.bottomRight;
+
   return (
     <div className={`${styles.floatingBadge} ${positionClass}`}>
       <div className={styles.badgeHeader}>

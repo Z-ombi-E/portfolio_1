@@ -12,31 +12,37 @@
     min-width: 160px;
     transition: all 0.3s ease;
     z-index: 10;
+    
 }
 
 /*Position Classes*/
 .topLeft {
-    top: 20px;
-    left: 20px;
+    top: -20px;
+    left: 30px;
+    
 }
 
 .topRight {
-    top: 20px;
-    right: 20px;
+    top: 0;
+    right: 0;
+    
 }
 
 .bottomLeft {
-    bottom: 40px;
-    left: 20px;
+    bottom: 0;
+    left: 0;
+    
 }
 
 .bottomRight {
-    bottom: 40px;
-    right: 20px;
+    bottom: 0;
+    right: 0;
+    
 }
 .customPosition1{
-    right: 20px;
+    right: -10px;
     top: 300px;
+    
 }
 
 .floatingBadge:hover {
@@ -101,6 +107,7 @@
 }
 
 
+
 @keyframes pulse {
 
     0%,
@@ -126,3 +133,4 @@
         transform: translateY(-10px);
     }
 }
+
