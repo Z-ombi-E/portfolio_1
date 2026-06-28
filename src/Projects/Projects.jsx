@@ -14,6 +14,7 @@ import {
   FaStar,
   FaEye,
   FaDesktop,
+  FaJsSquare,
 } from "react-icons/fa";
 import { SiMysql } from "react-icons/si";
 import { MdCode } from "react-icons/md";
@@ -76,7 +77,7 @@ function Projects() {
       techStack: [
         { name: "React", icon: FaReact, color: "#61DAFB" },
         { name: "CSS", icon: FaCss3, color: "#1572B6" },
-        { name: "JavaScript", icon: MdCode, color: "#F7DF1E" },
+        { name: "JavaScript", icon: FaJsSquare, color: "#F7DF1E" },
       ],
       github: "#",
       demo: "#",

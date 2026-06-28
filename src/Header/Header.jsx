@@ -19,8 +19,9 @@ function Header() {
         <ul>
           <li><a href="#" className={styles.active}>Home</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#">Stack</a></li>
+          <li><a href="#">Skills</a></li>
           <li><a href="#">Projects</a></li>
+          <li><a href="#">Education</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
       </nav>
@@ -60,9 +61,10 @@ function Header() {
       <div className={`${styles.mobileMenu} ${open ? styles.show : ''}`}>
         <ul className={styles.mobileNav}>
           <li><a href="#" onClick={() => setOpen(false)}>Home</a></li>
-          <li><a href="#" onClick={() => setOpen(false)}>Portfolio</a></li>
-          <li><a href="#" onClick={() => setOpen(false)}>Services</a></li>
           <li><a href="#" onClick={() => setOpen(false)}>About</a></li>
+          <li><a href="#" onClick={() => setOpen(false)}>Skills</a></li>
+          <li><a href="#" onClick={() => setOpen(false)}>Projects</a></li>
+          <li><a href="#" onClick={() => setOpen(false)}>Education</a></li>
           <li><a href="#" onClick={() => setOpen(false)}>Contact</a></li>
         </ul>
         <ul className={styles.mobileSocials}>
