@@ -11,16 +11,16 @@ function Header() {
 
       {/* Left — Logo */}
       <div className={styles.leftSection}>
-        <h1>Nethum Nenula</h1>
+        <h1>Nethum. </h1>
       </div>
 
       {/* Center — Desktop Nav */}
       <nav className={styles.navButtons}>
         <ul>
           <li><a href="#" className={styles.active}>Home</a></li>
-          <li><a href="#about">About Me</a></li>
-          <li><a href="#">Skills </a></li>
-          <li><a href="#">Projects </a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#">Stack</a></li>
+          <li><a href="#">Projects</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
       </nav>
