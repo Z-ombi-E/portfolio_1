@@ -1,4 +1,3 @@
-// Contact.jsx
 import styles from './Contact.module.css'
 import { 
     FaEnvelope, FaPhone, FaMapMarkerAlt, 
