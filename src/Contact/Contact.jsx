@@ -23,7 +23,7 @@ function Contact() {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        // Handle form submission here
+        
         console.log('Form submitted:', formData)
         alert('Message sent successfully!')
         setFormData({ name: '', email: '', message: '' })
@@ -54,7 +54,7 @@ function Contact() {
                                 </div>
                                 <div>
                                     <h4>Email</h4>
-                                    <a href="mailto:vipuradevnak@gmail.com">vipuradevnak@gmail.com</a>
+                                    <a href="mailto:nethumnenula2004@gmail.com">nethumnenula2004@gmail.com</a>
                                 </div>
                             </div>
 
@@ -64,7 +64,7 @@ function Contact() {
                                 </div>
                                 <div>
                                     <h4>Phone</h4>
-                                    <a href="tel:+94703960848">+94 70 396 0848</a>
+                                    <a href="tel:+94765526902">+94 76 552 6902</a>
                                 </div>
                             </div>
 
@@ -74,7 +74,7 @@ function Contact() {
                                 </div>
                                 <div>
                                     <h4>Location</h4>
-                                    <span>Pannipitiya, Sri Lanka</span>
+                                    <span>Meegoda, Sri Lanka</span>
                                 </div>
                             </div>
                         </div>
