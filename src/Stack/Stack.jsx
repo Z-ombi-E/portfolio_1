@@ -2,7 +2,8 @@ import styles from './Stack.module.css'
 import { 
     FaReact, FaNodeJs, FaPython, FaJava, 
     FaGitAlt, FaDocker, FaAws, FaDatabase,
-    FaHtml5, FaCss3Alt, FaJsSquare
+    FaHtml5, FaCss3Alt, FaJsSquare,
+    FaLaptopCode, FaServer, FaLayerGroup, FaTools
 } from 'react-icons/fa'
 import { 
     SiExpress, SiMongodb, SiTailwindcss, 
@@ -15,7 +16,8 @@ function Stack() {
     const skillCategories = [
         {
             title: "Frontend",
-            icon: "💻",
+            icon: FaLaptopCode, 
+            iconColor: "#61DAFB",
             skills: [
                 { name: "React", icon: FaReact, color: "#61DAFB" },
                 { name: "JavaScript", icon: FaJsSquare, color: "#F7DF1E" },
@@ -27,7 +29,8 @@ function Stack() {
         },
         {
             title: "Backend",
-            icon: "⚙️",
+            icon: FaServer, 
+            iconColor: "#339933",
             skills: [
                 { name: "Node.js", icon: FaNodeJs, color: "#339933" },
                 { name: "Express.js", icon: SiExpress, color: "#FFFFFF" },
@@ -37,7 +40,8 @@ function Stack() {
         },
         {
             title: "Object Oriented Programming",
-            icon: "🧬",
+            icon: FaLayerGroup, 
+            iconColor: "#FF6B00",
             skills: [
                 { name: "Java", icon: FaJava, color: "#ff0000" },
                 { name: "Python", icon: FaPython, color: "#3776AB" },
@@ -46,7 +50,8 @@ function Stack() {
         },
         {
             title: "Database",
-            icon: "🗄️",
+            icon: FaDatabase, 
+            iconColor: "#47A248",
             skills: [
                 { name: "MongoDB", icon: SiMongodb, color: "#47A248" },
                 { name: "PostgreSQL", icon: SiPostgresql, color: "#4169E1" },
@@ -57,7 +62,8 @@ function Stack() {
         },
         {
             title: "Tools & DevOps",
-            icon: "🛠️",
+            icon: FaTools, 
+            iconColor: "#FF9900",
             skills: [
                 { name: "Git", icon: FaGitAlt, color: "#F05032" },
                 { name: "Docker", icon: FaDocker, color: "#2496ED" },
@@ -78,30 +84,39 @@ function Stack() {
                 </p>
 
                 <div className={styles.skillsGrid}>
-                    {skillCategories.map((category, index) => (
-                        <div key={index} className={styles.categoryCard}>
-                            <div className={styles.categoryHeader}>
-                                <span className={styles.categoryIcon}>{category.icon}</span>
-                                <h3>{category.title}</h3>
-                            </div>
-                            <div className={styles.skillList}>
-                                {category.skills.map((skill, idx) => {
-                                    const IconComponent = skill.icon
-                                    return (
-                                        <div key={idx} className={styles.skillItem}>
-                                            <div className={styles.skillIconWrapper}>
-                                                <IconComponent 
-                                                    className={styles.skillIcon} 
-                                                    style={{ color: skill.color }}
-                                                />
+                    {skillCategories.map((category, index) => {
+                        const IconComponent = category.icon
+                        return (
+                            <div key={index} className={styles.categoryCard}>
+                                <div className={styles.categoryHeader}>
+                                    <div className={styles.categoryIconWrapper}>
+                                        <IconComponent 
+                                            className={styles.categoryIcon} 
+                                            style={{ color: category.iconColor }}
+                                        />
+                                    </div>
+                                    <h3>{category.title}</h3>
+                                    <span className={styles.skillCount}>{category.skillCount}</span>
+                                </div>
+                                <div className={styles.skillList}>
+                                    {category.skills.map((skill, idx) => {
+                                        const SkillIcon = skill.icon
+                                        return (
+                                            <div key={idx} className={styles.skillItem}>
+                                                <div className={styles.skillIconWrapper}>
+                                                    <SkillIcon 
+                                                        className={styles.skillIcon} 
+                                                        style={{ color: skill.color }}
+                                                    />
+                                                </div>
+                                                <span className={styles.skillName}>{skill.name}</span>
                                             </div>
-                                            <span className={styles.skillName}>{skill.name}</span>
-                                        </div>
-                                    )
-                                })}
+                                        )
+                                    })}
+                                </div>
                             </div>
-                        </div>
-                    ))}
+                        )
+                    })}
                 </div>
             </div>
         </section>
