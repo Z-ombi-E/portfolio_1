@@ -1,4 +1,7 @@
 import styles from "./Projects.module.css";
+import project1 from "../assets/project1.jpg";
+import project2 from "../assets/project2.jpg";
+import project3 from "../assets/project3.jpg";
 import {
   FaGithub,
   FaExternalLinkAlt,
@@ -25,7 +28,7 @@ function Projects() {
       techStack: [{ name: "Java", icon: FaJava, color: "#007396" }],
       github: "#",
       demo: "#",
-      image: "src/assets/project1.jpg",
+      image: project1, 
       details: {
         date: "Aug 2025",
         role: "Software Developer",
@@ -51,7 +54,7 @@ function Projects() {
       ],
       github: "#",
       demo: "#",
-      image: "src/assets/project2.jpg",
+      image: project2, 
       details: {
         date: "Mar 2026",
         role: "Software Developer",
@@ -77,7 +80,7 @@ function Projects() {
       ],
       github: "#",
       demo: "#",
-      image: "src/assets/project3.jpg",
+      image: project3, 
       details: {
         date: "Jun 2026",
         role: "Frontend Developer",
