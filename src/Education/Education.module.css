@@ -222,3 +222,200 @@
     color: #ff6b00;
 }
 
+/* Responsive Design */
+
+@media (max-width: 1024px) {
+    .education {
+        padding: 5rem 2rem;
+    }
+
+    .sectionTitle {
+        font-size: 2.4rem;
+    }
+
+    .sectionSubtitle {
+        margin-bottom: 3rem;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .education {
+        padding: 4rem 1.5rem;
+        min-height: auto;
+    }
+
+    .sectionTitle {
+        font-size: 2rem;
+    }
+
+    .sectionTitle::after {
+        width: 50px;
+    }
+
+    .sectionTitle:hover::after {
+        width: 80px;
+    }
+
+    .sectionSubtitle {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .timeline {
+        padding-left: 1.5rem;
+    }
+
+    .timelineItem {
+        padding: 1rem 0;
+        padding-left: 2rem;
+    }
+
+    .timelineLine {
+        left: 6px;
+        top: 50px;
+    }
+
+    .timelineDot {
+        left: -4px;
+        top: 1.5rem;
+        width: 16px;
+        height: 16px;
+    }
+
+    .timelineIcon {
+        font-size: 0.6rem;
+    }
+
+    .timelineContent {
+        padding: 1.5rem;
+    }
+
+    .eduTitle {
+        font-size: 1.2rem;
+    }
+
+    .eduDescription {
+        font-size: 0.9rem;
+    }
+
+    .eduDetails {
+        gap: 0.4rem 1rem;
+    }
+
+    .detailTag {
+        font-size: 0.8rem;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .education {
+        padding: 3rem 1rem;
+    }
+
+    .sectionTitle {
+        font-size: 1.8rem;
+    }
+
+    .sectionTitle::after {
+        width: 40px;
+        height: 3px;
+    }
+
+    .sectionSubtitle {
+        font-size: 0.9rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .timeline {
+        padding-left: 1rem;
+    }
+
+    .timelineItem {
+        padding: 0.8rem 0;
+        padding-left: 1.5rem;
+    }
+
+    .timelineLine {
+        left: 4px;
+        top: 40px;
+    }
+
+    .timelineDot {
+        left: -6px;
+        top: 1.2rem;
+        width: 14px;
+        height: 14px;
+    }
+
+    .timelineIcon {
+        font-size: 0.5rem;
+    }
+
+    .timelineContent {
+        padding: 1.2rem;
+    }
+
+    .period {
+        font-size: 0.75rem;
+        padding: 0.15rem 0.6rem;
+    }
+
+    .eduTitle {
+        font-size: 1.1rem;
+    }
+
+    .institution {
+        font-size: 0.85rem;
+    }
+
+    .eduDescription {
+        font-size: 0.85rem;
+    }
+
+    .eduDetails {
+        flex-direction: column;
+        gap: 0.2rem;
+    }
+
+    .detailTag {
+        font-size: 0.8rem;
+    }
+}
+
+
+@media (max-width: 380px) {
+    .education {
+        padding: 2.5rem 0.8rem;
+    }
+
+    .sectionTitle {
+        font-size: 1.5rem;
+    }
+
+    .sectionSubtitle {
+        font-size: 0.85rem;
+    }
+
+    .timelineContent {
+        padding: 1rem;
+    }
+
+    .eduTitle {
+        font-size: 1rem;
+    }
+
+    .institution {
+        font-size: 0.8rem;
+    }
+
+    .eduDescription {
+        font-size: 0.8rem;
+    }
+
+    .detailTag {
+        font-size: 0.75rem;
+    }
+}
+
