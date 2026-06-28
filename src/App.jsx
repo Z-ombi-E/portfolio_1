@@ -6,6 +6,7 @@ import Stack from "./Stack/Stack.jsx";
 import Projects from "./Projects/Projects.jsx";
 import Education from "./Education/Education.jsx";
 import Contact from "./Contact/Contact.jsx";
+import Footer from "./Footer/Footer.jsx";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Projects />
       <Education />
       <Contact />
+      <Footer />
     </div>
   );
 }
