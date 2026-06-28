@@ -1,3 +1,4 @@
+// Contact.jsx
 import styles from './Contact.module.css'
 import { 
     FaEnvelope, FaPhone, FaMapMarkerAlt, 
@@ -23,7 +24,6 @@ function Contact() {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        
         console.log('Form submitted:', formData)
         alert('Message sent successfully!')
         setFormData({ name: '', email: '', message: '' })
@@ -32,7 +32,7 @@ function Contact() {
     return (
         <section className={styles.contact} id="contact">
             <div className={styles.container}>
-                <h2 className={styles.sectionTitle}>Get In Touch</h2>
+                <h2 className={styles.sectionTitle}>Get in Touch</h2>
                 <p className={styles.sectionSubtitle}>Let's work together</p>
 
                 <div className={styles.contactWrapper}>
@@ -43,7 +43,7 @@ function Contact() {
                             Fill out the form and I'll get back to you shortly.
                         </p>
                         <p className={styles.infoDescription}>
-                            Have a project in mind or want to discuss an opportunity? I'm
+                            Have a project in mind or want to discuss an opportunity? I'm 
                             always open to new connections and collaborations.
                         </p>
 
@@ -53,8 +53,10 @@ function Contact() {
                                     <MdEmail className={styles.contactIcon} />
                                 </div>
                                 <div>
-                                    <h4>Email</h4>
-                                    <a href="mailto:nethumnenula2004@gmail.com">nethumnenula2004@gmail.com</a>
+                                    <div className={styles.infoLabel}>EMAIL</div>
+                                    <a href="mailto:nethumnenula2004@gmail.com" className={styles.infoValue}>
+                                        nethumnenula2004@gmail.com
+                                    </a>
                                 </div>
                             </div>
 
@@ -63,8 +65,10 @@ function Contact() {
                                     <FaPhone className={styles.contactIcon} />
                                 </div>
                                 <div>
-                                    <h4>Phone</h4>
-                                    <a href="tel:+94765526902">+94 76 552 6902</a>
+                                    <div className={styles.infoLabel}>PHONE</div>
+                                    <a href="tel:+94765526902" className={styles.infoValue}>
+                                        +94 76 552 6902
+                                    </a>
                                 </div>
                             </div>
 
@@ -73,8 +77,10 @@ function Contact() {
                                     <FaMapMarkerAlt className={styles.contactIcon} />
                                 </div>
                                 <div>
-                                    <h4>Location</h4>
-                                    <span>Meegoda, Sri Lanka</span>
+                                    <div className={styles.infoLabel}>LOCATION</div>
+                                    <span className={styles.infoValue}>
+                                        Meegoda, Sri Lanka
+                                    </span>
                                 </div>
                             </div>
                         </div>
@@ -94,6 +100,7 @@ function Contact() {
 
                     {/* Right Side - Contact Form */}
                     <div className={styles.contactForm}>
+                        <h3 className={styles.formTitle}>Send me a message</h3>
                         <form onSubmit={handleSubmit}>
                             <div className={styles.formGroup}>
                                 <div className={styles.inputWrapper}>
@@ -124,8 +131,8 @@ function Contact() {
                             </div>
 
                             <div className={styles.formGroup}>
-                                <div className={styles.textareaWrapper}>
-                                    <FaComment className={styles.textareaIcon} />
+                                <div className={styles.inputWrapper}>
+                                    <FaComment className={styles.inputIcon} />
                                     <textarea
                                         name="message"
                                         placeholder="Your Message"
