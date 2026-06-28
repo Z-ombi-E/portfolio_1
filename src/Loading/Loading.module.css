@@ -57,7 +57,6 @@
 
 .name {
   color: #ff6b00;
-  /* Removed gradient, kept solid orange */
 }
 
 /* Loading Bar */
@@ -152,5 +151,267 @@
   40% {
     transform: scale(1);
     opacity: 1;
+  }
+}
+
+
+
+/* Tablet & Small Laptops */
+@media (max-width: 1024px) {
+  .logo {
+    font-size: 3.8rem;
+    letter-spacing: 2px;
+  }
+
+  .loadingBarContainer {
+    width: 260px;
+  }
+
+  .percentage {
+    font-size: 1.3rem;
+  }
+
+  .status {
+    font-size: 0.85rem;
+  }
+
+  .loadingContent {
+    gap: 1.8rem;
+  }
+}
+
+/* Mobile Landscape & Small Tablets */
+@media (max-width: 768px) {
+  .logo {
+    font-size: 3rem;
+    letter-spacing: 2px;
+  }
+
+  .loadingBarContainer {
+    width: 220px;
+    height: 3px;
+  }
+
+  .percentage {
+    font-size: 1.1rem;
+  }
+
+  .status {
+    font-size: 0.8rem;
+  }
+
+  .loadingContent {
+    gap: 1.5rem;
+  }
+
+  .dot {
+    width: 8px;
+    height: 8px;
+  }
+
+  .loadingDots {
+    gap: 0.6rem;
+  }
+}
+
+/* Mobile Portrait */
+@media (max-width: 480px) {
+  .loadingScreen {
+    padding: 1.5rem;
+  }
+
+  .logo {
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+  }
+
+  .loadingBarContainer {
+    width: 180px;
+    height: 3px;
+  }
+
+  .percentage {
+    font-size: 1rem;
+  }
+
+  .status {
+    font-size: 0.75rem;
+  }
+
+  .loadingContent {
+    gap: 1.2rem;
+  }
+
+  .dot {
+    width: 7px;
+    height: 7px;
+  }
+
+  .loadingDots {
+    gap: 0.5rem;
+  }
+}
+
+/* Extra Small Mobile */
+@media (max-width: 380px) {
+  .logo {
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+  }
+
+  .loadingBarContainer {
+    width: 150px;
+    height: 2px;
+  }
+
+  .percentage {
+    font-size: 0.9rem;
+  }
+
+  .status {
+    font-size: 0.7rem;
+  }
+
+  .loadingContent {
+    gap: 1rem;
+  }
+
+  .dot {
+    width: 6px;
+    height: 6px;
+  }
+
+  .loadingDots {
+    gap: 0.4rem;
+  }
+}
+
+/* Large Screens */
+@media (min-width: 1400px) {
+  .logo {
+    font-size: 5.5rem;
+    letter-spacing: 4px;
+  }
+
+  .loadingBarContainer {
+    width: 350px;
+    height: 5px;
+  }
+
+  .percentage {
+    font-size: 1.8rem;
+  }
+
+  .status {
+    font-size: 1rem;
+  }
+
+  .loadingContent {
+    gap: 2.5rem;
+  }
+
+  .dot {
+    width: 12px;
+    height: 12px;
+  }
+
+  .loadingDots {
+    gap: 1rem;
+  }
+}
+
+/* Height-based responsive for short screens */
+@media (max-height: 600px) {
+  .logo {
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+  }
+
+  .loadingBarContainer {
+    width: 200px;
+    height: 3px;
+  }
+
+  .percentage {
+    font-size: 1rem;
+  }
+
+  .status {
+    font-size: 0.75rem;
+  }
+
+  .loadingContent {
+    gap: 1rem;
+  }
+
+  .dot {
+    width: 6px;
+    height: 6px;
+  }
+
+  .loadingDots {
+    gap: 0.4rem;
+  }
+}
+
+/* Very tall screens */
+@media (min-height: 900px) {
+  .logo {
+    font-size: 5rem;
+  }
+
+  .loadingBarContainer {
+    width: 350px;
+  }
+
+  .loadingContent {
+    gap: 2.5rem;
+  }
+
+  .dot {
+    width: 12px;
+    height: 12px;
+  }
+
+  .loadingDots {
+    gap: 1rem;
+  }
+}
+
+
+@media (prefers-color-scheme: light) {
+  .loadingScreen {
+    background: #f5f5f5;
+  }
+
+  .percentage {
+    color: #1a1a1a;
+  }
+
+  .status {
+    color: #666;
+  }
+
+  .loadingBarContainer {
+    background: #e0e0e0;
+  }
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+  .loadingContent {
+    animation: none;
+  }
+
+  .loadingBar::after {
+    animation: none;
+  }
+
+  .dot {
+    animation: none;
+  }
+
+  .loadingScreen {
+    animation: none;
   }
 }
