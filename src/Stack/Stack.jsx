@@ -32,7 +32,7 @@ function Stack() {
                 { name: "Node.js", icon: FaNodeJs, color: "#339933" },
                 { name: "Express.js", icon: SiExpress, color: "#FFFFFF" },
                 { name: "Python", icon: FaPython, color: "#3776AB" },
-                { name: "Java", icon: FaJava, color: "#007396" }
+                { name: "Java", icon: FaJava, color: "#ff0000" }
             ]
         },
         {
@@ -63,8 +63,8 @@ function Stack() {
                 { name: "Docker", icon: FaDocker, color: "#2496ED" },
                 { name: "AWS", icon: FaAws, color: "#FF9900" },
                 { name: "Kubernetes", icon: SiKubernetes, color: "#326CE5" },
-                { name: "IntelliJ IDEA", icon: SiIntellijidea, color: "#000000" },
-                { name: "WebStorm", icon: SiWebstorm, color: "#000000" }
+                { name: "IntelliJ IDEA", icon: SiIntellijidea, color: "#ff1d1d" },
+                { name: "WebStorm", icon: SiWebstorm, color: "#1975ff" }
             ]
         }
     ]
