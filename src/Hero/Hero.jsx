@@ -55,7 +55,7 @@ function Hero() {
         <h1>
           Nethum <span className={styles.highlight}>Nenula</span>
         </h1>
-        <h3 className={styles.tagName}>a.k.a. &nbsp;<span className={styles.username}> ZombiE</span></h3>
+        {/*<h3 className={styles.tagName}>a.k.a. &nbsp;<span className={styles.username}> ZombiE</span></h3>*/}
 
         <div className={styles.titles}>
           <span className={styles.title}>I am a</span>
