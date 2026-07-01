@@ -27,7 +27,7 @@ function About() {
             <h3>Crafting digital experiences with code & creativity</h3>
 
             <p className={styles.bio}>
-              I'm Nethum Nenula, a passionate web developer with a love for
+              I'm Nethum Nenula, a passionate Full Stack Developer and Software Developer with a love for
               creating beautiful and functional digital experiences. I believe
               in writing clean, efficient code and continuously learning new
               technologies to stay ahead in the ever-evolving tech landscape.
